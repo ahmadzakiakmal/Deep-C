@@ -1,4 +1,4 @@
-// case 01: Avoid copying large values
+// Case 01: Avoid copying large values
 
 #include <stdio.h>
 
