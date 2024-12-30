@@ -11,6 +11,9 @@ int main() {
     arr[i] = i;
   }
 
+  // Here the array is iterated not by the for loop index,
+  // but by incrementing the pointer
+  // this works because the pointer shifts and points to the next element in the array
   for (int i = 0; i < length; i++) {
     printf("%d\n", arr[0]);
     arr ++;
