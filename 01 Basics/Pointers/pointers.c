@@ -8,16 +8,12 @@ int main(int argc, char *argv[]) {
 
   // the memory address the pointer points toward
   printf("Memory address: %p\n", ptrCurrentValue);
-
-  // casting back into integer
-  printf("Int casted: %p\n", (int *) ptrCurrentValue); 
-  // the value after being casted
-  printf("Int casted: %d\n", * (int *) ptrCurrentValue); 
-
+  
   // casting to void pointer as the standard %p type
   printf("Void casted: %p\n", (void *) ptrCurrentValue); 
-  // the value after being casted 
-  // it cannot be directly casted from void*, void* only acts as the generic type for pointers)
+
+  // pointers cannot be directly derefenced from void*, 
+  // void* only acts as the generic type for pointers)
   printf("Void value: %d", * (int *) (void *) ptrCurrentValue);
 
   return 0;
